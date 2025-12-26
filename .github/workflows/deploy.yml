@@ -1,0 +1,15 @@
+name: Deploy
+
+on:
+  push:
+    branches: [develop, main]
+
+jobs:
+  deploy:
+    uses: twentythree-ch/github-workflows/.github/workflows/deploy-to-portainer.yml@main
+    with:
+      stack_name: ${{ github.event.repository.name }}  # Uses repo name as stack name
+    secrets:
+      portainer_url: ${{ secrets.PORTAINER_URL }}
+      portainer_token: ${{ secrets.PORTAINER_TOKEN }}
+      portainer_endpoint_id: ${{ secrets.PORTAINER_ENDPOINT_ID }}
