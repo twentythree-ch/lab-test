@@ -9,7 +9,7 @@ jobs:
     uses: twentythree-ch/github-workflows/.github/workflows/deploy-to-portainer.yml@main
     with:
       stack_name: ${{ github.event.repository.name }}  # Uses repo name as stack name
-      portainer_url: "https://portainer.twentythree.ch"
+      portainer_url: "https://portainer-dev.twentythree.ch"
       portainer_endpoint_id: "2"
 
     secrets:
