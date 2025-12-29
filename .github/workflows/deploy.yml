@@ -13,7 +13,4 @@ jobs:
       portainer_url: ${{ secrets.PORTAINER_URL }}
       portainer_token: ${{ secrets.PORTAINER_TOKEN }}
       portainer_endpoint_id: ${{ secrets.PORTAINER_ENDPOINT_ID }}
-      cloudflare_client_id: ${{ secrets.CF_CLIENT_ID }}
-      cloudflare_client_secret: ${{ secrets.CF_CLIENT_SECRET }}
-      github_secret: ${{ secrets.GH_BOTPROTECTION_SECRET }}
       netbird_setup_key: ${{ secrets.NETBIRD_SETUP_KEY }}
