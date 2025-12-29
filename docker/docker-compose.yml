@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  hello-world:
+    image: ghcr.io/vansummeren/lab-helloworld:latest
+    networks:
+      external-services
+    # secrets:
+    #   - my_secret
+    environment:
+      - FLASK_ENV=production
+    restart: unless-stopped
+
+# secrets:
+#   my_secret:
+#     file: ./secrets/my_secret.txt
+
+networks:
+  external-services:
+    external: true

@@ -11,7 +11,8 @@ jobs:
       stack_name: ${{ github.event.repository.name }}  # Uses repo name as stack name
       portainer_url: "https://portainer-dev.twentythree.ch"
       portainer_endpoint_id: "2"
-
+      github_username: "vansummeren"
     secrets:
       portainer_token: ${{ secrets.PORTAINER_TOKEN }}
       netbird_setup_key: ${{ secrets.NETBIRD_SETUP_KEY }}
+      github_token: ${{ secrets.GH_PAT }}
