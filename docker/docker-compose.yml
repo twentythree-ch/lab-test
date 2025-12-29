@@ -4,7 +4,7 @@ services:
   hello-world:
     image: ghcr.io/vansummeren/lab-helloworld:latest
     networks:
-      external-services
+      - external-services
     # secrets:
     #   - my_secret
     environment:
