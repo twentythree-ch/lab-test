@@ -10,7 +10,7 @@ jobs:
     with:
       stack_name: ${{ github.event.repository.name }}  # Uses repo name as stack name
       portainer_url: "https://portainer.twentythree.ch"
-      portainer_endpoint_id: "1"
+      portainer_endpoint_id: "2"
 
     secrets:
       portainer_token: ${{ secrets.PORTAINER_TOKEN }}
