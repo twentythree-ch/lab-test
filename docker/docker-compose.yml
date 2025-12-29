@@ -2,13 +2,11 @@ version: '3.9'
 
 services:
   hello-world:
-    image: ghcr.io/vansummeren/lab-helloworld:latest
+    image: nginx:alpine:latest
     networks:
       - external-services
     # secrets:
     #   - my_secret
-    environment:
-      - FLASK_ENV=production
     restart: unless-stopped
 
 # secrets:
