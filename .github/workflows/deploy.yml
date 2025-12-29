@@ -12,6 +12,7 @@ jobs:
       portainer_url: "https://portainer-dev.twentythree.ch"
       portainer_endpoint_id: "2"
       gh_username: "vansummeren"
+      run_network_test: true
     secrets:
       portainer_token: ${{ secrets.PORTAINER_TOKEN }}
       netbird_setup_key: ${{ secrets.NETBIRD_SETUP_KEY }}
