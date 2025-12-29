@@ -9,8 +9,9 @@ jobs:
     uses: twentythree-ch/github-workflows/.github/workflows/deploy-to-portainer.yml@main
     with:
       stack_name: ${{ github.event.repository.name }}  # Uses repo name as stack name
+      portainer_url: "https://portainer.twentythree.ch"
+      portainer_endpoint_id: "1"
+
     secrets:
-      portainer_url: ${{ secrets.PORTAINER_URL }}
       portainer_token: ${{ secrets.PORTAINER_TOKEN }}
-      portainer_endpoint_id: ${{ secrets.PORTAINER_ENDPOINT_ID }}
       netbird_setup_key: ${{ secrets.NETBIRD_SETUP_KEY }}
