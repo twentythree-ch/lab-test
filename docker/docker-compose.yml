@@ -2,7 +2,9 @@ version: '3.9'
 
 services:
   hello-world:
-    image: nginx:alpine:latest
+    image: nginx:alpine
+    ports:
+      - "80:80"
     networks:
       - external-services
     # secrets:
